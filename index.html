@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+                                                        <!-- Header Part -->
+    <header class="header">
+        <a href="#home" class="logo">Aman            <span>Chaurasia</span></a>
+        <box-icon name='menu' id="menu_icon"></box-icon>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi It's <span>Aman Chaurasia</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>This is Aman Chaurasia and i am a Web Developer I have developed this website for my personal portfolio to people can check my work and can hire me </p>
+
+
+
+            <div class="social-icons">
+                <a href="#"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAARBJREFUOE/l1L8rxlEUx/HXY5cMlMyIQQYZDIykGEx+LXYjkxSLQSkRs0LPzMagh/+AFOn5DywGi0W+3zrD7fGrb99nc5d7z+mc9z33c+69FU0clSayNMK20Yk9PBTdKIXtYC0AdxgqAzvBUgBe0V4GNoxTdGMd+2VgRXO/xKeajWAqIupRZS8WwveMayxiHK24Rd609zwmha3gIBIvMYlpXITvHl3oaCjpGMtFYb/J0JM1r16kshy2kd3DI4ziHC2xQy5FtQjsDW34CMBNpuFYrFczDXf/gs1EBXnOE/qTs1Yz31zYW9m8+RPsChNIYY8YSGBnSaf/K+y7F9CH+dDpJbuwh4lmsxgMu4ZaUz/HT8EcSRTpgZ79AAAAAElFTkSuQmCC" /></box-icon></a>
+                <a href="#"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAbRJREFUOE+t1EvIj1EQx/HPG0lhgZS3RO6JheRSVii5RFkoKSVbdlISC28WbylZsVNKLCxY2Ei57SQJRclCKCGUQi65nKl5dPx7H/9nYXbnzO98z8yZmTPgP9pAB9YYzMdoPMLXtjNtsNjfgZ1YhVEJ+ImbOIVz+FWDR4LNwAUs6RP1XWzBi0bXC5uLW5jUIf2QvMXyksHTWNSwseWme/k+R3ARw1iB5/iG2bhT3u0ANpT0Q/cAS/G9hoXjUEa0Byf7RLcbJ1KzH0dr2EsMpnMXTveBbc8ihOwhFjWweXich18n9K9KtYCfYXr6BhvYalzLzRul/LHuYpexLoVrGlj00vXcvI/FXUi4jWWp3djA5uBJbv7A1Cz7v5iT8SonI3QL6gJEz4Qg7DyiCJ9baOOyQFvT/wETa9jh0isHS+8NIVpjPM7iWBX1rNRsQwAbi7NDNWxCNucnrMyRiirHVESFw0ITUfRmNBMfe8dpEy7hOPa2pPimNOuU9EX7rC+XX4n1SIO+uYzNGXzJN4vUansf74N3iHSvNs62L2haCXsfFmJtDyyiiI6PuY0o/1iXz7Fjy/EbZxhN39fQURgAAAAASUVORK5CYII=" /></box-icon></a>
+                <a href="https://www.instagram.com/mr.aman.chaurasia/" target="blank"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAYhJREFUOE+t1DuMTVEUxvHfiOimEYUotEZkopR4FhoRjUSn0gyhofE2jFeEKISJhEJLodGIROJtGolCq5MIiUZHY5wvOSdZjnvlRu5q7s3a3/6fb6299p4wxpgYI8sw2CrsQn4HxWc8wpe62Idl8y3sHtHxQxzC1+grLP9fY+OIoE72BluwWGFJvBwRFOfL8KDVx8BChR3E/ADYTTzHEqzDYezDatxo9fub/t6psJO4VGC/sAffsC1l4AU+4kPT2xVFewxXK+wCThfBHJ42oGdY2uZ/Yjs24HrRnsCVCjuPM0WwuXVU3WY5G9+2Ljt59l2ssDiZLbCtjbMAL/f6eLxx9wo5xS7ONZMxV2FJnC2CgFPmk6akyTb/HTswhXtFeyofrbBYTald/MB6LEdcJnIA7/Ae00V7FNcq7ABu90pKwzMaC+1orMVerOnpZnD3f4e2P45/DW3AaeymAYP7r1RONgf1x3XKhlz0THWGdZS4jyPd6zHsCcpV2YmVQ4h5gh7jU10f6+P4G5q2RRTF9J9cAAAAAElFTkSuQmCC" /></box-icon></a>
+                <a href="#"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAATdJREFUOE/F1L8rxWEUx/HXFVEWySgGWUhJiskkmxIWi8GPlNVgsxjIP2BhEBkZjCxMopAB9x+QxSKDWNxHz61v377Xvbdu3TN96znnfT7neT7nm1PDyNWQpW6wNixhFA04xCla0Yl8Utky3nBWYvRrjKTOjjGIMbwnYXuYxwKOUkUDeCzR5AqX2EjC1rEdCy6wiZAYYiqOlMU7KYw4h+8krBt3aE9U5HFfaNISgVmw6WKjJGwLExiq0i7hHm9CTRIW7uugStAHOvCThjUizD9ZBXA/2uWvJG3avuifSkcN+c/F5mlYUPeA/grU7WI1mZe1Tl3xqRfRWwJ6G4369R8sKBvGGmZLgM4LBg52+EyfF5U1YwcrCN9Z8RRNHXYyM9Jj9mAcM2jCS1yVsAmv5e6xbr+gcsL8AlpCLxSxl/sxAAAAAElFTkSuQmCC" /></box-icon></a>
+
+            </div>
+
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="image5.jpg" alt="">
+        </div>
+
+
+    </section>
+
+
+
+                <!-- <-education Page-> -->
+    
+    
+    
+    
+    
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2019</div>
+
+                <div class="timeline-content">
+                    <h3>High School</h3>
+                    <p>I have done my high school Education from St Joseph Inter College,Thakurganj,Lucknow,Uttar Pradesh</p>
+
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021</div>
+
+                        <div class="timeline-content">
+                            <h3>Intermediate</h3>
+                            <p>I have completed my Intermediate from St Joseph Inter College Thakurganj,Lucknow,UttarPradesh</p>
+
+                </div>
+
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022-2024</div>
+
+                <div class="timeline-content">
+                    <h3>Bachelor Of Vocational Studies</h3>
+                    <p>I have Done bachelor of vocational Degree In Computer Science From National Pg College Hazratganj Lucknow UttarPradesh</p>
+
+                </div>
+
+            </div>
+            <!-- <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021</div>
+
+                <!-- <div class="timeline-content">
+                    <h3>Job</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi modi voluptates quod vitae
+                        obcaecati nihil consequuntur assumenda ipsum ullam. Quia?</p>
+
+                </div> --> -->
+
+            </div>
+        </div>
+    </section>
+
+
+                <!-- services section -->
+
+    <section class="services"id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>UI Design</h4>
+                    <p>UI (User Interface) design is the process of designing interfaces in software or digital devices, focusing on maximizing usability and enhancing user experience. Good UI design ensures that interfaces are visually appealing, intuitive, and easy to navigate</p>
+                </div>
+            </div>
+
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>Frontend </h4>
+                    <p>Frontend development is the practice of building the user-facing part of a website or application. It focuses on creating the layout, design, and interactive elements that users see and interact with directly.</p>
+                </div>
+            </div>
+
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>Backend</h4>
+                    <p>Backend development involves building and maintaining the server-side of a web application, which powers the frontend and handles data management, processing, and storage.</p>
+                </div>
+            </div>
+
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>Android development</h4>
+                    <p>Application development is the process of creating software applications for devices like computers, smartphones, or tablets. It involves planning, designing, coding, testing, and deploying software tailored to user needs.</p>
+                </div>
+            </div>
+
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>Full Stack development</h4>
+                    <p>Full stack web development involves working on both the frontend (client side) and backend (server side) of a web application, providing a complete approach to web development. Full stack developers handle all layers of the development process.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+                                         <!-- Testimonials -->
+
+
+        <section class="testimonials" id="testimonials">
+            <div class="testimonial-box">
+                <h2 class="heading">Testimonials</h2>
+
+                <div class="wrapper">
+                    <div class="testimonial-item">
+                        <img src="image1.jpg" alt="">
+                        <h2>Divyansh</h2>
+                        <div class="rating">
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eos, voluptas officiis culpa saepe temporibus numquam rem a consequuntur odit.</p>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <img src="image2.jpg" alt="">
+                        <h2>Adarsh</h2>
+                        <div class="rating">
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+
+
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eos, voluptas officiis culpa saepe temporibus numquam rem a consequuntur odit.</p>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <img src="image4.jpg" alt="">
+                        <h2>Vishal</h2>
+                        <div class="rating">
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+                        </div>
+
+                            
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eos, voluptas officiis culpa saepe temporibus numquam rem a consequuntur odit.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+                            <!-- Contatct Section Starts from Here -->
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+
+            <form action="">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text"
+                        placeholder ="Full Name">
+                        <input type="email"
+                        placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <input type="number"
+                        placeholder="Mobile Number">
+                        <input type="text"
+                        placeholder="Subject">
+                    </div>
+                </div>
+
+                <div class="input-group-2">
+                    <textarea name="" id="" cols="30"
+                    rows="10" placeholder="Your Message"></textarea>
+                    <input type="Submit" value="Send Message" class="btn">
+                </div>
+            </form>
+
+        </section>
+
+                                    <!-- Footer Starts  From Here -->
+
+    <footer class="footer">
+            <div class="social">
+                <a href="#"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAARBJREFUOE/l1L8rxlEUx/HXY5cMlMyIQQYZDIykGEx+LXYjkxSLQSkRs0LPzMagh/+AFOn5DywGi0W+3zrD7fGrb99nc5d7z+mc9z33c+69FU0clSayNMK20Yk9PBTdKIXtYC0AdxgqAzvBUgBe0V4GNoxTdGMd+2VgRXO/xKeajWAqIupRZS8WwveMayxiHK24Rd609zwmha3gIBIvMYlpXITvHl3oaCjpGMtFYb/J0JM1r16kshy2kd3DI4ziHC2xQy5FtQjsDW34CMBNpuFYrFczDXf/gs1EBXnOE/qTs1Yz31zYW9m8+RPsChNIYY8YSGBnSaf/K+y7F9CH+dDpJbuwh4lmsxgMu4ZaUz/HT8EcSRTpgZ79AAAAAElFTkSuQmCC" /></box-icon></a>
+            <a href="#"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAbRJREFUOE+t1EvIj1EQx/HPG0lhgZS3RO6JheRSVii5RFkoKSVbdlISC28WbylZsVNKLCxY2Ei57SQJRclCKCGUQi65nKl5dPx7H/9nYXbnzO98z8yZmTPgP9pAB9YYzMdoPMLXtjNtsNjfgZ1YhVEJ+ImbOIVz+FWDR4LNwAUs6RP1XWzBi0bXC5uLW5jUIf2QvMXyksHTWNSwseWme/k+R3ARw1iB5/iG2bhT3u0ANpT0Q/cAS/G9hoXjUEa0Byf7RLcbJ1KzH0dr2EsMpnMXTveBbc8ihOwhFjWweXich18n9K9KtYCfYXr6BhvYalzLzRul/LHuYpexLoVrGlj00vXcvI/FXUi4jWWp3djA5uBJbv7A1Cz7v5iT8SonI3QL6gJEz4Qg7DyiCJ9baOOyQFvT/wETa9jh0isHS+8NIVpjPM7iWBX1rNRsQwAbi7NDNWxCNucnrMyRiirHVESFw0ITUfRmNBMfe8dpEy7hOPa2pPimNOuU9EX7rC+XX4n1SIO+uYzNGXzJN4vUansf74N3iHSvNs62L2haCXsfFmJtDyyiiI6PuY0o/1iXz7Fjy/EbZxhN39fQURgAAAAASUVORK5CYII=" /></box-icon></a>
+            <a href="#"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAYhJREFUOE+t1DuMTVEUxvHfiOimEYUotEZkopR4FhoRjUSn0gyhofE2jFeEKISJhEJLodGIROJtGolCq5MIiUZHY5wvOSdZjnvlRu5q7s3a3/6fb6299p4wxpgYI8sw2CrsQn4HxWc8wpe62Idl8y3sHtHxQxzC1+grLP9fY+OIoE72BluwWGFJvBwRFOfL8KDVx8BChR3E/ADYTTzHEqzDYezDatxo9fub/t6psJO4VGC/sAffsC1l4AU+4kPT2xVFewxXK+wCThfBHJ42oGdY2uZ/Yjs24HrRnsCVCjuPM0WwuXVU3WY5G9+2Ljt59l2ssDiZLbCtjbMAL/f6eLxx9wo5xS7ONZMxV2FJnC2CgFPmk6akyTb/HTswhXtFeyofrbBYTald/MB6LEdcJnIA7/Ae00V7FNcq7ABu90pKwzMaC+1orMVerOnpZnD3f4e2P45/DW3AaeymAYP7r1RONgf1x3XKhlz0THWGdZS4jyPd6zHsCcpV2YmVQ4h5gh7jU10f6+P4G5q2RRTF9J9cAAAAAElFTkSuQmCC" /></box-icon></a>
+            <a href="#"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAATdJREFUOE/F1L8rxWEUx/HXFVEWySgGWUhJiskkmxIWi8GPlNVgsxjIP2BhEBkZjCxMopAB9x+QxSKDWNxHz61v377Xvbdu3TN96znnfT7neT7nm1PDyNWQpW6wNixhFA04xCla0Yl8Utky3nBWYvRrjKTOjjGIMbwnYXuYxwKOUkUDeCzR5AqX2EjC1rEdCy6wiZAYYiqOlMU7KYw4h+8krBt3aE9U5HFfaNISgVmw6WKjJGwLExiq0i7hHm9CTRIW7uugStAHOvCThjUizD9ZBXA/2uWvJG3avuifSkcN+c/F5mlYUPeA/grU7WI1mZe1Tl3xqRfRWwJ6G4369R8sKBvGGmZLgM4LBg52+EyfF5U1YwcrCN9Z8RRNHXYyM9Jj9mAcM2jCS1yVsAmv5e6xbr+gcsL8AlpCLxSxl/sxAAAAAElFTkSuQmCC" /></box-icon></a>
+            </div>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#education">About Me</a>
+            </li>
+            
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#testimonials">Testimonials</a>
+            </li>
+
+        </ul>
+        <p class="copyright">
+            @ Portfolio Website |  All Rights Are Reserved
+        </p>
+
+
+
+
+
+
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
